@@ -1,3 +1,5 @@
-module.exports = function(deployer) {
-  // Use deployer to state migration tasks.
+let BearToken = artifacts.require("./BearToken.sol");  
+  
+module.exports = function(deployer) {  
+  deployer.deploy(BearToken);  
 };
